@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Padding </title>
+        <style>
+            .padding {
+                border: 1px solid black;
+
+                padding-top:30px;
+                padding-bottom: 50px;
+                padding-left:40%;
+                padding-right:60%;
+            }
+
+            /* Margin ShortHand */
+
+            .padding1 {
+                border: 1px solid black;
+                margin:40px;
+                padding:20%,40%,40%,20%;    /* top,bottom,left,right*/ 
+            }
+
+            .padding2 {
+                border: 1px solid black;
+                margin-bottom:20px;
+                padding:20%,40%;               /* top and bottom,left and right*/
+            }
+        
+            .padding3 {
+                border: 1px solid black;
+                padding:30px;                    /* all sides */
+            }
+        
+            
+        </style>
+    </head>
+    <body>
+        <div class="padding"> PADDING </div>
+        <div class="padding1"> top,bottom,left,right</div>
+        <div class="padding2"> top and bottom,left and right</div>
+        <div class="padding3"> all sides </div>
+    </body>
+</html>

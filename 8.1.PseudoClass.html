@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pseudo Class</title>
+        <style>
+            /* selector:pseudo-class {} */
+
+            /* this class is created to apply properties that we needed*/
+            .pseudoclass {
+                margin-top:80px;
+                margin-right:300px;
+                border:1px solid black;
+                background-color: black;
+                color: aliceblue;
+            }
+
+            /* here the 'hover' properity is applied, it means when you placed your cursor on the text 
+            it will change to what we written here it may be background color,color etc..*/
+            .pseudoclass:hover {
+                background-color: yellow;
+                color:red;
+            }
+
+            a{
+                color:blue;
+            }
+
+            a:hover {
+                color: red;
+            }
+
+            /* here the "visited" properity states that when you click on the link it take you to browser
+            and when you check it again,it turns purple, that means its visited already*/
+            a:visited {
+                color: yellow;
+            }
+            
+            p:first-child{
+                color:red;
+                background-color: aqua;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="pseudoclass"> this is pseudo class </div>
+
+        <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj_m9iNn8P5AhXMhVYBHdPHD1UQPAgI"> click me </a>
+        <br>
+        <a href="#"> hey </a>
+        <br>
+        <section>
+            <div> 
+                <p>paragraph 1</p>
+                <p>paragraph 2</p>
+            </div>
+        </section>
+
+
+    </body>
+</html>

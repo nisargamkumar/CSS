@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Margin</title>
+        <style>
+            .margin {
+                border: 1px solid black;
+                margin-top:30px;
+                margin-bottom: 50px;
+                margin-left:30px;
+                margin-right:40px;
+            }
+
+            /* Margin ShortHand */
+
+            .margin1 {
+                border: 1px solid black;
+                margin:60px,20px,40px,10px;    /* top,bottom,left,right*/ 
+            }
+
+            .margin2 {
+                border: 1px solid black;
+                margin:40px,20px;               /* top and bottom,left and right*/
+            }
+        /* here in margin2 and margin3margin collapse takes place */
+
+        
+            .margin3 {
+                border: 1px solid black;
+                margin:30px;                    /* all sides */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="margin"> MARGIN</div>
+        <div class="margin1"> top,bottom,left,right</div>
+        <div class="margin2"> top and bottom,left and right</div>
+        <div class="margin3"> all sides </div>
+    </body>
+</html>

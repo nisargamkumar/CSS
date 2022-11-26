@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Z-index </title>
+        <style>
+            /* How elements should be placed on top of each other/they stacked */
+
+            .red{
+                border: 1px solid red;
+                background-color: red;
+                height:100px;
+                width: 100px;
+                border-bottom: 50px; 
+            }
+            .yellow{
+                border: 1px solid yellow;
+                background-color: yellow;
+                border-bottom: 20px;
+                margin-left: 40px;
+                margin-right: 40px;
+                height:100px;
+                width: 100px;
+                position: absolute;     /* mandatory */
+                z-index: 1;             /* if Z-inex=1(image comes above),
+                                        if Z-index=-1(image goes backward)
+                                        by default Z-index=0; */
+                top: 50px;
+                left: 20px;  
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="red"></div>
+        <div class="yellow"></div>
+    </body>
+</html>

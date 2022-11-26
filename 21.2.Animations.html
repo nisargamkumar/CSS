@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  </title>
+        <style>
+
+            /*here animation takes reverse*/
+            .animation2{
+                margin-top: 10px;
+                height: 100px;
+                width: 100px;
+                background-color: yellow;
+                animation-name: color-changesss;
+                animation-duration: 10s;
+                animation-delay: 3s;
+                position: relative;
+                left: 300px;
+                animation-direction: reverse;                 /* reversing */
+                animation-timing-function: ease-out;
+            }
+            @keyframes color-changesss {
+                from {
+                    top:0;                                      /* starting point */
+                    left:0;
+                    background-image: pink;
+                }
+                to {
+                    left:200px;                                 /* ending point*/
+                    background-color: red;
+                }
+            }
+
+            .animation3{
+                margin-top: 10px;
+                height: 100px;
+                width: 100px;
+                background-color: green;
+                animation-name: color-changess;
+                animation-duration: 10s;
+                animation-delay: 3s;
+                position: relative;
+                left: 300px;
+                animation-direction:unset;
+                animation-iteration-count: infinite;                /*animation takes place infinetly*/
+                animation-timing-function: ease;
+            }
+            @keyframes color-changess {
+                from {
+                    top:0;
+                    left:0;
+                    background-image: green;
+                }
+                to {
+                    top:100px;
+                    left:200px;
+                    background-color:grey;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="animation2"></div>
+        <div class="animation3"></div>
+    </body>
+</html>

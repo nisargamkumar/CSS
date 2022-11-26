@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> CSS Selectors </title>
+
+        <!-- Styling -->
+        <style>
+
+            /* tag name */
+            h1 {                               
+                color:aquamarine 
+            }
+
+             /* class name */
+            .first {
+                color: blue;
+            }
+
+             /* id name */
+            #second {
+                color: blueviolet;
+            }
+            #third {
+                color: brown;
+            }
+
+             /* universal selector */
+            *{
+                border: 1px solid black;
+            }
+
+             /* grouping elements */
+            p,h3,div {
+                color: yellow;
+            }
+
+             /* descendants */
+            div p {
+                background-color: blueviolet;
+            }
+
+             /* child  */
+            div>p {
+                color: black;
+            }
+
+             /* Siblings-adjacent */
+            div+p {
+                color: greenyellow;
+            }
+
+             /* Siblings- general */
+            div~p {
+                background-color: black;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1> Nisarga </h1>
+        <h1> Arya </h1>
+
+        <h1 class="first">  HELLO </h1>    <!-- ID can have same "classes" but class cant have same ID's-->
+       
+        <h1 id="second"> BYEEE </h1>
+        <h1 id="third" class="first"> THIS IS CSS STYLING </h1>
+        
+
+        <p> abcd </p>
+        <h3> rsting </h3>
+        <div> text </div>
+
+        <div>
+            <p> nisarga </p>
+            <p> Arya </p>
+            <section>
+                <p> Arun </p>
+                <p> Rakki </p>
+            </section>
+        </div>
+        <div>
+            <p> nayana </p>
+            <p> amma </p>
+            <section>
+                <p> Appaji </p>
+                <p> Rakki </p>
+            </section>
+        </div>
+
+    </body>
+
+</html>

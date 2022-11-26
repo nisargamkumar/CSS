@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tables </title>
+        <style>
+
+            /* it will change boder size and color*/
+            table{
+                border:1px solid greenyellow;
+            }
+
+            /* here it changes the table header properties */
+           .thead {
+                 background-color: blue;
+                 color: white;
+                 text-align: center;
+           } 
+
+           /* here it changes the table body properties */
+           .tbody {
+                background-color: grey;
+                color: aliceblue;
+                text-align: center;
+           }
+
+           /* this changes 1st column of tbody */
+           tbody>tr>:nth-child(1) {
+                background-color: pink;
+                text-align: left;
+           }
+
+           /* this changes 4st column of tbody */
+           tbody>tr>:nth-child(4) {
+                background-color: blueviolet;
+           }
+
+           /* applyinh hover properity to last col */
+           tbody>tr>:nth-child(4):hover{
+                background-color: red;
+                color: blanchedalmond;
+           }
+
+           /* changing properity for last row */
+           .lastrow{
+                background-color: yellow;
+                color: black;
+           }
+  
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead class="thead">
+                <tr>
+                <th>Name</th>
+                <th>Marks</th>
+                <th>Mobile No.</th>
+                <th>Gender</th>
+            </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td>Arya</td>
+                    <td>99</td>
+                    <td>9844475789</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Rakki</td>
+                    <td>99</td>
+                    <td>9844475789</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Arun</td>
+                    <td>99</td>
+                    <td>9844475789</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Nisarga M Kumar</td>
+                    <td>99</td>
+                    <td>9844475789</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Akash</td>
+                    <td>99</td>
+                    <td>9844475789</td>
+                    <td>Male</td>
+                </tr>
+                <tr class="lastrow">
+                    <td>Nayana</td>
+                    <td>99</td>
+                    <td>9844475789</td>
+                    <td>Male</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

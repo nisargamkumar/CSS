@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Flex-Grow </title>
+        <style>
+            .flex > div > div {
+                border:1px solid black;
+                color: white;
+                background-color: grey;
+            }
+            .self-allign{
+                border:1px solid red;
+                flex-direction: row;
+                display: flex;    
+                flex-wrap: wrap;
+                margin-bottom: 5px;
+                height: 100px;
+                gap:5px;
+                padding:10px 5px;
+            }
+            </style>
+            </head>
+            <body>
+        <div class="flex">
+            <div style="align-self:10px">
+                    self-allign changes
+                     <div class="self-allign">
+                     <div>Lorem Ipsum is simply </div>
+                          <div style="flex-grow:1;"> Flex Grow</div>
+                              <div>Lorem Ipsum is simply dummy </div>
+                                  <div>Lorem </div>
+                                  <div>Nisarga</div>
+            </div>
+        </div>
+            </div>
+            </body>
+            </html>

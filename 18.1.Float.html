@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Float </title>
+        <style>
+            img{
+                height: 200px;
+                width: 300px;
+                float: right; 
+                /* if float is right: image->right context->left
+                    if float is left: image->left context->right
+                    if float is none, no changes*/
+            }
+        </style>
+    </head>
+    <body>
+       <img src="data:image/jpeg;base64,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" alt="baby">
+       </div>Lorem Ipsum is simply dummy text of the printing and 
+       typesetting industry. Lorem Ipsum has been the industry's 
+       standard dummy text ever since the 1500s, when an unknown printer
+        took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was
+        popularised in the 1960s with the release of Letraset sheets containing 
+        Lorem Ipsum passages, and more recently with desktop publishing 
+        software like Aldus PageLorem Ipsum is simply dummy text of the printing
+       and typesetting industry. Lorem Ipsum has been the industry's standard 
+        Ipsum.Lorem Ipsum is simply dummy text of the printing and 
+        typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, when an unknown printer
+         took a galley of type and scrambled it to make a type specimen book.
+         It has survived not only five centuries, but also the leap into
+         electronic typesetting, remaining essentially unchanged. It was
+         popularised in the 1960s with the release of Letraset sheets containing 
+         Lorem Ipsum passages, and more recently with desktop publishing 
+         software like Aldus PageLorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has been the industry's standard 
+         Ipsum tware like Aldus PageLorem Ipsum is simply dummy text of the printing
+         and typesetting industry. Lorem Ipsum has been the industry's standard 
+          Ipsum.Lorem Ipsum is simply dummy text of the printing and 
+          typesetting industry. Lorem Ipsum has been the industry's 
+          standard dummy text ever since the 1500s, when an unknown printer
+           took a galley of type and scrambled it to make a type specimen book.
+           It has survived not only five centuries, but also the leap into
+           electronic typesetting, remaining essentially unchanged. It was
+           popularised in the 1960s with the release of Letraset sheets containing 
+           Lorem Ipsum passages, and more recently with desktop publishing 
+           software like Aldus PageLorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard 
+           Ipsum</div>
+    </body>
+</html>
